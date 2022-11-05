@@ -1,0 +1,117 @@
+:root{
+    --h1:#130F49;
+    --blue: #34A1CD;
+    --dark-purple:#55527C;
+    --grey:#B4B2C5;
+    --pink:#EA4C89;
+    --circle:#F4F3FF; 
+    --light-pink :#f7cac9;  
+    --light-purple:#ADA8FF;
+    --light-blue :#E9F9FF;
+}
+
+
+@media screen and (max-width :750px)
+{
+    /********************Toggle Button*********************/
+    .toggle-btn{
+        display: block;
+        position: fixed;
+        right:30px;
+        font-size: 35px;
+        top:50px;
+        z-index: 11111;
+    }
+    .toggle-btn.topToggle{
+        top:20px;
+        padding:0;
+    }
+    /******************Menu Bar***********************/
+    .navbar{
+        flex-direction: column;
+        height: 100vh;
+        display: none;
+        
+    }
+    .active{
+        flex-direction: column;
+        height: 100vh;
+        display: block;
+        display: flex;  
+        background-color: rgb(255, 217, 217);
+        z-index: 1;
+    }
+
+
+    .active .nav-list ul{
+        flex-direction: column;
+    }
+    
+    .active .dropdown-menu{
+        left:54px;
+        top:-10px;
+    }
+    .active .social-icons ul li{
+        margin:20px 40px;
+    }
+    .logo-2{
+        width:70px;
+    }
+    .mobile-nav{
+        position:fixed;
+        width:100%;
+        transition: 0.5s;
+        padding:10px 10px;
+    }
+    .mobile-nav.scroll{
+        top:0px;
+        padding:0px;    
+        background-color: rgba(252, 209, 209, 0.913);
+        box-shadow: 0px 0px 20px rgb(254, 112, 112);
+        border-bottom-left-radius: 30px;
+        border-bottom-right-radius: 30px;
+        z-index: 100;
+    }
+   
+    
+    
+   
+    /*******************Section-1********************/
+    .row{
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+    }
+    
+    .section-1{
+    
+        background-image: url(img/background.jpg);
+        height:190vh;
+        background-size: cover;
+        padding:30px;
+        padding-top:200px;
+    }
+    .col-2{
+        justify-content: center;
+        padding-top: 80px;
+    }
+    
+    /**********************Section-2************************/
+    .col{
+        margin:1px;
+    }
+    .section-2 .col{
+        width:90%;
+    }
+    .section-2 .col-1{
+        padding-top:70px;
+    }
+    
+   
+    /**********************footer****************/
+
+    .footer-cont{
+        flex-direction: column;
+    }
+
+}
